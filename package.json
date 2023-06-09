@@ -28,8 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "e2e:dev": "cross-env NODE_ENV=dev npx playwright test --ui",
-    "e2e:prod": "cross-env NODE_ENV=prod npx playwright test --ui",
+    "e2e:dev": "cross-env NODE_ENV=dev npx playwright test",
+    "e2e:prod": "cross-env NODE_ENV=prod npx playwright test",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
