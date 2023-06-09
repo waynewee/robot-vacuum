@@ -13,7 +13,7 @@ const config = require(`./config/${env}.env.json`).e2e;
 const playwrightConfig = defineConfig({
   testDir: "./e2e/tests",
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -22,7 +22,7 @@ const playwrightConfig = defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [["html", { outputFolder: "./e2e/test-results" }]],
-  outputDir: "./e2e/results",
+  outputDir: "./e2e/output",
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */

@@ -8,7 +8,7 @@ export class RobotAppPage {
   }
 
   async startApp() {
-    await this.page.goto("/");
+    await this.page.goto("/robot-vacuum");
     await this.page.getByText("Start your Vacuum Robot!");
     await this.page.getByText("Get Started").click();
   }
