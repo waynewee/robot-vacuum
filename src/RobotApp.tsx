@@ -2,9 +2,8 @@ import { useState } from "react";
 
 import { Coordinates, Direction, Robot, RobotGrid } from "./types";
 import { RobotAvatar } from "./RobotAvatar";
-import { Button, Box, Grid, Snackbar, Alert } from "@mui/material";
-import { RotateLeft, RotateRight, Campaign } from "@mui/icons-material";
-import { RobotGridCell } from "./RobotGridCell";
+import { Button, Box, Snackbar, Alert } from "@mui/material";
+import { Campaign } from "@mui/icons-material";
 import { RobotReportDialog } from "./RobotReportDialog";
 import { RobotWelcomeDialog } from "./RobotWelcomeDialog";
 import { RobotActionButtons } from "./RobotActionButtons";

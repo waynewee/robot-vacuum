@@ -13,7 +13,7 @@ export const RobotReportDialog = ({ robotState, open, onClose }: Props) => {
       <DialogContent>
         <Box paddingY={4}>
           {robotState.placed && (
-            <Card variant="outlined" sx={{ minWidth: 275, padding: 2, marginBottom: 2 }}>
+            <Card variant="outlined" sx={{ marginBottom: 2 }}>
               <CardContent>
                 <Typography textAlign={"center"} data-testid="result" variant="h5" component="div">
                   {robotState.coordinates.x}, {robotState.coordinates.y}, {robotState.direction}

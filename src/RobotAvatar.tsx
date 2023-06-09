@@ -58,6 +58,7 @@ export const RobotAvatar = ({ robotState, robotGrid }: Props) => {
       sx={{ transform: `translate(${translateX}px, ${translateY}px)`, transition: "0.6s ease-out" }}
     >
       <img
+        alt="robot-vacuum"
         style={{
           transform: `rotate(${robotState.rotation}deg)`,
           transition: "0.5s ease",

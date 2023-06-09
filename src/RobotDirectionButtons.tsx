@@ -19,7 +19,7 @@ type Props = {
   onDirectionSelect: (direction: Direction) => void;
 };
 
-const StyledButton = styled(Button)(() => ({
+const ResponsiveButton = styled(Button)(() => ({
   height: "50%",
   width: "50%",
   minWidth: "50%",
@@ -49,7 +49,7 @@ export const RobotDirectionButtons = ({ onDirectionSelect }: Props) => {
     <div style={{ width: "100%", height: "100%" }}>
       {directionButtons.map(({ direction, icon }) => {
         return (
-          <StyledButton
+          <ResponsiveButton
             key={direction}
             onClick={(e) => {
               e.stopPropagation();
@@ -57,7 +57,7 @@ export const RobotDirectionButtons = ({ onDirectionSelect }: Props) => {
             }}
           >
             {icon}
-          </StyledButton>
+          </ResponsiveButton>
         );
       })}
     </div>
