@@ -65,7 +65,7 @@ export const RobotAvatar = ({ robotState, robotGrid }: Props) => {
           height: size,
           width: size,
         }}
-        src={"robot-vacuum-cleaner.png"}
+        src={"/robot-vacuum/robot-vacuum.png"}
       />
     </Box>
   );
