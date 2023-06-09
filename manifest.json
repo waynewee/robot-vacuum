@@ -1,7 +1,7 @@
 {
   "short_name": "Robot Vacuum",
   "name": "Robot Vacuum",
-  "start_url": ".",
+  "start_url": "./robot-vacuum",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
